@@ -42,131 +42,21 @@
 </head>
 <body>
 
-<nav class="navbar" role="navigation" aria-label="main navigation">
-  <div class="navbar-brand">
-    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-    </a>
-  </div>
-  <div class="navbar-menu">
-    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
-      <a class="navbar-item" href="https://keunhong.com">
-      <span class="icon">
-          <i class="fas fa-home"></i>
-      </span>
-      </a>
-
-      <div class="navbar-item has-dropdown is-hoverable">
-        <a class="navbar-link">
-          More Research
-        </a>
-        <div class="navbar-dropdown">
-          <a class="navbar-item" href="https://hypernerf.github.io">
-            HyperNeRF
-          </a>
-          <a class="navbar-item" href="https://nerfies.github.io">
-            Nerfies
-          </a>
-          <a class="navbar-item" href="https://latentfusion.github.io">
-            LatentFusion
-          </a>
-          <a class="navbar-item" href="https://photoshape.github.io">
-            PhotoShape
-          </a>
-        </div>
-      </div>
-    </div>
-
-  </div>
-</nav>
-
 
 <section class="hero">
   <div class="hero-body">
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">Nerfies: Deformable Neural Radiance Fields</h1>
+          <h1 class="title is-1 publication-title">UniVST: A Multi-Conditional Adapter for Unified Voice Style
+            Transfer with Style Manipulation</h1>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
-              <a href="https://keunhong.com">Keunhong Park</a><sup>1</sup>,</span>
-            <span class="author-block">
-              <a href="https://utkarshsinha.com">Utkarsh Sinha</a><sup>2</sup>,</span>
-            <span class="author-block">
-              <a href="https://jonbarron.info">Jonathan T. Barron</a><sup>2</sup>,
-            </span>
-            <span class="author-block">
-              <a href="http://sofienbouaziz.com">Sofien Bouaziz</a><sup>2</sup>,
-            </span>
-            <span class="author-block">
-              <a href="https://www.danbgoldman.com">Dan B Goldman</a><sup>2</sup>,
-            </span>
-            <span class="author-block">
-              <a href="https://homes.cs.washington.edu/~seitz/">Steven M. Seitz</a><sup>1,2</sup>,
-            </span>
-            <span class="author-block">
-              <a href="http://www.ricardomartinbrualla.com">Ricardo Martin-Brualla</a><sup>2</sup>
-            </span>
+              <p >Anonymous</a></p>
           </div>
 
           <div class="is-size-5 publication-authors">
-            <span class="author-block"><sup>1</sup>University of Washington,</span>
-            <span class="author-block"><sup>2</sup>Google Research</span>
           </div>
-
-          <div class="column has-text-centered">
-            <div class="publication-links">
-              <!-- PDF Link. -->
-              <span class="link-block">
-                <a href="https://arxiv.org/pdf/2011.12948"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fas fa-file-pdf"></i>
-                  </span>
-                  <span>Paper</span>
-                </a>
-              </span>
-              <span class="link-block">
-                <a href="https://arxiv.org/abs/2011.12948"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="ai ai-arxiv"></i>
-                  </span>
-                  <span>arXiv</span>
-                </a>
-              </span>
-              <!-- Video Link. -->
-              <span class="link-block">
-                <a href="https://www.youtube.com/watch?v=MrKrnHhk8IA"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fab fa-youtube"></i>
-                  </span>
-                  <span>Video</span>
-                </a>
-              </span>
-              <!-- Code Link. -->
-              <span class="link-block">
-                <a href="https://github.com/google/nerfies"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fab fa-github"></i>
-                  </span>
-                  <span>Code</span>
-                  </a>
-              </span>
-              <!-- Dataset Link. -->
-              <span class="link-block">
-                <a href="https://github.com/google/nerfies/releases/tag/0.1"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="far fa-images"></i>
-                  </span>
-                  <span>Data</span>
-                  </a>
-            </div>
 
           </div>
         </div>
@@ -175,79 +65,9 @@
   </div>
 </section>
 
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <video id="teaser" autoplay muted loop playsinline height="100%">
-        <source src="./static/videos/teaser.mp4"
-                type="video/mp4">
-      </video>
-      <h2 class="subtitle has-text-centered">
-        <span class="dnerf">Nerfies</span> turns selfie videos from your phone into
-        free-viewpoint
-        portraits.
-      </h2>
-    </div>
-  </div>
-</section>
 
 
-<section class="hero is-light is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-steve">
-          <video poster="" id="steve" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/steve.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-chair-tp">
-          <video poster="" id="chair-tp" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/chair-tp.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-shiba">
-          <video poster="" id="shiba" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/shiba.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-fullbody">
-          <video poster="" id="fullbody" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/fullbody.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-blueshirt">
-          <video poster="" id="blueshirt" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/blueshirt.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-mask">
-          <video poster="" id="mask" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/mask.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-coffee">
-          <video poster="" id="coffee" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/coffee.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-toby">
-          <video poster="" id="toby" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/toby2.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+
 
 
 <section class="section">
@@ -258,200 +78,370 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            We present the first method capable of photorealistically reconstructing a non-rigidly
-            deforming scene using photos/videos captured casually from mobile phones.
+            Voice Style Transfer (VST) modifies speech to match a reference style (e.g., timbre, emotion) while preserving its content. 
+            Most VST approaches pay attention to single style transfer and have made remarkable progress.
+            Recent approaches have attempted to transfer multiple styles by disentangling speech attributes and enabling controllable style conversion.
+            However, these methods typically rely on style-conditioned generation without considering the original speech style during training, leading to limited preservation of source speech attributes.
           </p>
           <p>
-            Our approach augments neural radiance fields
-            (NeRF) by optimizing an
-            additional continuous volumetric deformation field that warps each observed point into a
-            canonical 5D NeRF.
-            We observe that these NeRF-like deformation fields are prone to local minima, and
-            propose a coarse-to-fine optimization method for coordinate-based models that allows for
-            more robust optimization.
-            By adapting principles from geometry processing and physical simulation to NeRF-like
-            models, we propose an elastic regularization of the deformation field that further
-            improves robustness.
-          </p>
-          <p>
-            We show that <span class="dnerf">Nerfies</span> can turn casually captured selfie
-            photos/videos into deformable NeRF
-            models that allow for photorealistic renderings of the subject from arbitrary
-            viewpoints, which we dub <i>"nerfies"</i>. We evaluate our method by collecting data
-            using a
-            rig with two mobile phones that take time-synchronized photos, yielding train/validation
-            images of the same pose at different viewpoints. We show that our method faithfully
-            reconstructs non-rigidly deforming scenes and reproduces unseen views with high
-            fidelity.
+            To address these issues, we formulate style transfer as a style-manipulation task that simply adjusts the style of the source speech instead of generating it from scratch. 
+            Therefore, we propose a unified Voice Style Transfer framework <b>UniVST</b> dedicated to transferring both single style and multiple styles.
+            Built on a Siamese-like diffusion model, UniVST consists of a Source Branch for extracting source speech features and a Conversion Branch for generating converted speech. 
+            We first employ a Multi-Condition Embedder (MCE) to extract rich style descriptions from natural language and precise timbre from personalized audio prompts.
+            We then propose a Multi-Conditional Adapter (MCA), which employs feature manipulation to extract and modulate style features from the source speech. 
+            These modulated style features are subsequently integrated into the conversion process via masked attention, enabling fine-grained style control while preserving the attributes of the source style.
+            During inference, classifier-free guidance improves transfer controllability, and a Large Audio-Language Model (LALM)-based Length Regulation refines speech rate and duration. 
+            Experimental results demonstrate that UniVST can achieve natural and accurate style transfer in multiple VST tasks compared to existing methods.
           </p>
         </div>
       </div>
     </div>
     <!--/ Abstract. -->
+  </div>
+</section>
 
-    <!-- Paper video. -->
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Video</h2>
-        <div class="publication-video">
-          <iframe src="https://www.youtube.com/embed/MrKrnHhk8IA?rel=0&amp;showinfo=0"
-                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-        </div>
-      </div>
-    </div>
-    <!--/ Paper video. -->
+
+<section class="section">
+  <div class="container is-max-desktop has-text-centered">
+    <h2 class="title is-3">Framework</h2>
+
+    <!-- Image 1 -->
+    <figure>
+      <img src="./static/image/framework.png" alt="Framework Overview" style="max-width: 100%;">
+      <figcaption style="margin-top: 0.5em;">Figure 1: Overall architecture of the proposed framework.</figcaption>
+    </figure>
+
+    <!-- Image 2 -->
+    <figure style="margin-top: 2em;">
+      <img src="./static/image/inference_all.png" alt="Inference Process" style="max-width: 100%;">
+      <figcaption style="margin-top: 0.5em;">Figure 2: Illustration of tempo estimation and the inference process of UniVST.</figcaption>
+    </figure>
+  </div>
+</section>
+
+
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3">Multi-Style Transfer</h2>
+    <p>
+      Given the following inputs:
+      <ul>
+        <li><strong>Text Prompt</strong>: A sentence or phrase that describes the intended speaking <em>style</em>.</li>
+        <li><strong>Audio Prompt</strong>: An audio sample representing the target <em>speaker identity</em>.</li>
+        <li><strong>Source Speech</strong>: The original input speech containing the content to be retained.</li>
+        <li><strong>Generated Speech</strong>: The output speech that should reflect the target speaker and desired style.</li>
+      </ul>
+    </p>
+    <h2></h2>
+    <div style="overflow-x: auto;">
+    <table style="min-width: 1000px; width: 100%; border-collapse: collapse;" border="1">
+      <colgroup>
+        <col style="width: 20%;">
+        <col style="width: 20%;">
+        <col style="width: 20%;"> <!-- 让 Text Prompt 变宽 -->
+        <col style="width: 20%;">
+        <col style="width: 20%;">
+      </colgroup>
+      <thead>
+        <tr>
+          <th class="title is-4">Source Speech</th>
+          <th class="title is-4">Audio Prompt</th>
+          <th class="title is-4">Text Prompt</th>
+          <th class="title is-4">UniVST</th>
+          <th class="title is-4">Vevo</th>
+        </tr>
+      </thead>
+      <tbody>
+        
+
+        <!-- Row 2 -->
+        <tr>
+          <td>
+            <h4 class="title is-4"></h4>
+            <audio controls style="width: 100%;" src="./static/audio/origin/0013_000694.wav" ></audio>
+          </td>
+          <td>
+            <h4 class="title is-4"></h4>
+            <audio controls style="width: 100%;" src="./static/audio/origin/0014_000694.wav" ></audio>
+          </td>
+          <td style="text-align: justify; font-size: 0.9em; font-size: 0.9em;">With a regular pitch, the man takes his livid time to express himself, infusing his words with a hint of normal energy.
+          </td>
+          <td>
+            <h4 class="title is-4"></h4>
+            <audio controls style="width: 100%;" src="./static/audio/PIDM_sty/PIDM_angry_0013_000694_to_angry_0014_000694.wav" ></audio>
+          </td>
+          <td>
+            <h4 class="title is-4"></h4>
+            <audio controls style="width: 100%;" src="./static/audio/vevo_voice/vevovoice_angry_0013_000694_to_angry_0014_000694.wav" ></audio>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <h4 class="title is-4"></h4>
+            <audio controls style="width: 100%;" src="./static/audio/origin/0015_000692.wav" ></audio>
+          </td>
+          <td>
+            <h4 class="title is-4"></h4>
+            <audio controls style="width: 100%;" src="./static/audio/origin/0020_001742.wav" ></audio>
+          </td>
+          <td style="text-align: justify; font-size: 0.9em;">A stunned male speaker conveys thoughts with a standard pitch, addressing topics at an ordinary speed, and exuding low energy.</td>
+          <td>
+            <h4 class="title is-4"> </h4>
+            <audio controls style="width: 100%;" src="./static/audio/PIDM_sty/PIDM_angry_0015_000692_to_surprised_0020_001742.wav" ></audio>
+          </td>
+          <td>
+            <h4 class="title is-4"> </h4>
+            <audio controls style="width: 100%;" src="./static/audio/vevo_voice/vevovoice_angry_0015_000692_to_surprised_0020_001742.wav" ></audio>
+          </td>
+        </tr>
+        
+        <tr>
+          <td>
+            <h4 class="title is-4"></h4>
+            <audio controls style="width: 100%;" src="./static/audio/origin/0019_001745.wav" ></audio>
+          </td>
+          <td>
+            <h4 class="title is-4"></h4>
+            <audio controls style="width: 100%;" src="./static/audio/origin/0013_001395.wav" ></audio>
+          </td>
+          <td style="text-align: justify; font-size: 0.9em;">A fatigued disconsolate male voice, characterized by a slow speaking speed and a deep, low pitch, emits a subtle energy, resulting in a soothing audio experience that exudes tranquility.</td>
+          <td>
+            <h4 class="title is-4"> </h4>
+            <audio controls style="width: 100%;" src="./static/audio/PIDM_sty/PIDM_surprised_0019_001745_to_sad_0013_001395.wav" ></audio>
+          </td>
+          <td>
+            <h4 class="title is-4"> </h4>
+            <audio controls style="width: 100%;" src="./static/audio/vevo_voice/vevovoice_surprised_0019_001745_to_sad_0013_001395.wav" ></audio>
+          </td>
+        </tr>
+        
+        <tr>
+          <td>
+            <h4 class="title is-4"></h4>
+            <audio controls style="width: 100%;" src="./static/audio/origin/0011_000348.wav" ></audio>
+          </td>
+          <td>
+            <h4 class="title is-4"></h4>
+            <audio controls style="width: 100%;" src="./static/audio/origin/0016_001398.wav" ></audio>
+          </td>
+          <td style="text-align: justify; font-size: 0.9em;">Speaking with intention, her unhappy voice held a high pitch and low energy.</td>
+          <td>
+            <h4 class="title is-4"> </h4>
+            <audio controls style="width: 100%;" src="./static/audio/PIDM_sty/PIDM_neutral_0011_000348_to_sad_0016_001398.wav"></audio>
+          </td>
+          <td>
+            <h4 class="title is-4"> </h4>
+            <audio controls style="width: 100%;" src="./static/audio/vevo_voice/vevovoice_neutral_0011_000348_to_sad_0016_001398.wav""></audio>
+          </td>
+        </tr>
+        
+        <tr>
+          <td>
+            <h4 class="title is-4"></h4>
+            <audio controls style="width: 100%;" src="./static/audio/origin/0017_001746.wav" ></audio>
+          </td>
+          <td>
+            <h4 class="title is-4"></h4>
+            <audio controls style="width: 100%;" src="./static/audio/origin/0018_001046.wav" ></audio>
+          </td>
+          <td style="text-align: justify; font-size: 0.9em;">With a rapid speaking speed, she expressed her joyful viewpoint.</td>
+          <td>
+            <h4 class="title is-4"> </h4>
+            <audio controls style="width: 100%;" src="./static/audio/PIDM_sty/PIDM_surprised_0017_001746_to_happy_0018_001046.wav" ></audio>
+          </td>
+          <td>
+            <h4 class="title is-4"> </h4>
+            <audio controls style="width: 100%;" src="./static/audio/vevo_voice/vevovoice_surprised_0017_001746_to_happy_0018_001046.wav" ></audio>
+          </td>
+        </tr>
+        
+      </tbody>
+    </table>
   </div>
 </section>
 
 
 <section class="section">
   <div class="container is-max-desktop">
-
-    <div class="columns is-centered">
-
-      <!-- Visual Effects. -->
-      <div class="column">
-        <div class="content">
-          <h2 class="title is-3">Visual Effects</h2>
-          <p>
-            Using <i>nerfies</i> you can create fun visual effects. This Dolly zoom effect
-            would be impossible without nerfies since it would require going through a wall.
-          </p>
-          <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/dollyzoom-stacked.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-      </div>
-      <!--/ Visual Effects. -->
-
-      <!-- Matting. -->
-      <div class="column">
-        <h2 class="title is-3">Matting</h2>
-        <div class="columns is-centered">
-          <div class="column content">
-            <p>
-              As a byproduct of our method, we can also solve the matting problem by ignoring
-              samples that fall outside of a bounding box during rendering.
-            </p>
-            <video id="matting-video" controls playsinline height="100%">
-              <source src="./static/videos/matting.mp4"
-                      type="video/mp4">
-            </video>
-          </div>
-
-        </div>
-      </div>
+    <h2 class="title is-3">Emotion Transfer</h2>
+    <p>
+      Given the following inputs:
+      <ul>
+        <li><strong>Text Prompt</strong>: A sentence or phrase that describes the intended speaking <em>style</em>.</li>
+        <li><strong>Source Speech</strong>: The original input speech containing the content to be retained.</li>
+        <li><strong>Generated Speech</strong>: The output speech that should reflect the target speaker and desired style.</li>
+      </ul>
+    </p>
+    <div style="overflow-x: auto;">
+      <table style="min-width: 1700px; width: 100%; border-collapse: collapse;" border="1">
+        <colgroup>
+          <col style="width: 13%;">
+          <col style="width: 13%;">
+          <col style="width: 20%;">
+          <col style="width: 13%;">
+          <col style="width: 13%;">
+          <col style="width: 13%;">
+          <col style="width: 13%;">
+        </colgroup>
+        <thead>
+          <tr>
+            <th class="title is-4">Source Speech</th>
+            <th class="title is-4">Audio Prompt</th>
+            <th class="title is-4">Text Prompt</th>
+            <th class="title is-4">UniVST</th>
+            <th class="title is-4">AINN</th>
+            <th class="title is-4">Vevo</th>
+            <th class="title is-4">StyleVC</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><audio controls style="width: 100%;" src="./static/audio/static_evc/origin/0018_000692.wav"></audio></td>
+            <td><audio controls style="width: 100%;" src="./static/audio/static_evc/origin/0016_000346.wav"></audio></td>
+            <td style="text-align: justify; font-size: 0.9em;">Whispering softly, her pitch remains high.</td>
+            <td><audio controls style="width: 100%;" src="./static/audio/static_evc/pidm/pidm_angry_0018_000692_to_neutral_0016_000346.wav"></audio></td>
+            <td><audio controls style="width: 100%;" src="./static/audio/static_evc/ainn/ainn_angry_0018_000692_to_neutral_0016_000346.wav"></audio></td>
+            <td><audio controls style="width: 100%;" src="./static/audio/static_evc/vevo/vevo_angry_0018_000692_to_neutral_0016_000346.wav"></audio></td>
+            <td><audio controls style="width: 100%;" src="./static/audio/static_evc/stylevc/stylevc_angry_0018_000692_to_neutral_0016_000346.wav"></audio></td>
+          </tr>
+          <tr>
+            <td><audio controls style="width: 100%;" src="./static/audio/static_evc/origin/0016_000695.wav"></audio></td>
+            <td><audio controls style="width: 100%;" src="./static/audio/static_evc/origin/0015_001392.wav"></audio></td>
+            <td style="text-align: justify; font-size: 0.9em;">Her low-energy voice contrasts with her heartbroken high key.</td>
+            <td><audio controls style="width: 100%;" src="./static/audio/static_evc/pidm/pidm_angry_0016_000695_to_sad_0015_001392.wav"></audio></td>
+            <td><audio controls style="width: 100%;" src="./static/audio/static_evc/ainn/ainn_angry_0016_000695_to_sad_0015_001392.wav"></audio></td>
+            <td><audio controls style="width: 100%;" src="./static/audio/static_evc/vevo/vevo_angry_0016_000695_to_sad_0015_001392.wav"></audio></td>
+            <td><audio controls style="width: 100%;" src="./static/audio/static_evc/stylevc/stylevc_angry_0016_000695_to_sad_0015_001392.wav"></audio></td>
+          </tr>
+          <tr>
+            <td><audio controls style="width: 100%;" src="./static/audio/static_evc/origin/0014_001046.wav"></audio></td>
+            <td><audio controls style="width: 100%;" src="./static/audio/static_evc/origin/0020_001394.wav"></audio></td>
+            <td style="text-align: justify; font-size: 0.9em;">The heartbroken man speaks in a rich, low voice with a measured cadence.</td>
+            <td><audio controls style="width: 100%;" src="./static/audio/static_evc/pidm/pidm_happy_0014_001046_to_sad_0020_001394.wav"></audio></td>
+            <td><audio controls style="width: 100%;" src="./static/audio/static_evc/ainn/ainn_happy_0014_001046_to_sad_0020_001394.wav"></audio></td>
+            <td><audio controls style="width: 100%;" src="./static/audio/static_evc/vevo/vevo_happy_0014_001046_to_sad_0020_001394.wav"></audio></td>
+            <td><audio controls style="width: 100%;" src="./static/audio/static_evc/stylevc/stylevc_happy_0014_001046_to_sad_0020_001394.wav"></audio></td>
+          </tr>
+          <tr>
+            <td><audio controls style="width: 100%;" src="./static/audio/static_evc/origin/0013_000350.wav"></audio></td>
+            <td><audio controls style="width: 100%;" src="./static/audio/static_evc/origin/0017_001041.wav"></audio></td>
+            <td style="text-align: justify; font-size: 0.9em;">Speaking quickly with a high tone, her amused energy remained subdued.</td>
+            <td><audio controls style="width: 100%;" src="./static/audio/static_evc/pidm/pidm_neutral_0013_000350_to_happy_0017_001041.wav"></audio></td>
+            <td><audio controls style="width: 100%;" src="./static/audio/static_evc/ainn/ainn_neutral_0013_000350_to_happy_0017_001041.wav"></audio></td>
+            <td><audio controls style="width: 100%;" src="./static/audio/static_evc/vevo/vevo_neutral_0013_000350_to_happy_0017_001041.wav"></audio></td>
+            <td><audio controls style="width: 100%;" src="./static/audio/static_evc/stylevc/stylevc_neutral_0013_000350_to_happy_0017_001041.wav"></audio></td>
+          </tr>
+          <tr>
+            <td><audio controls style="width: 100%;" src="./static/audio/static_evc/origin/0012_001399.wav"></audio></td>
+            <td><audio controls style="width: 100%;" src="./static/audio/static_evc/origin/0014_000699.wav"></audio></td>
+            <td style="text-align: justify; font-size: 0.9em;">A livid man addresses topics with a standard pitch, engaging in discourse at a usual speed, and with an undertone of low energy.</td>
+            <td><audio controls style="width: 100%;" src="./static/audio/static_evc/pidm/pidm_sad_0012_001399_to_angry_0014_000699.wav"></audio></td>
+            <td><audio controls style="width: 100%;" src="./static/audio/static_evc/ainn/ainn_sad_0012_001399_to_angry_0014_000699.wav"></audio></td>
+            <td><audio controls style="width: 100%;" src="./static/audio/static_evc/vevo/vevo_sad_0012_001399_to_angry_0014_000699.wav"></audio></td>
+            <td><audio controls style="width: 100%;" src="./static/audio/static_evc/stylevc/stylevc_sad_0012_001399_to_angry_0014_000699.wav"></audio></td>
+          </tr>
+        </tbody>
+      </table>
     </div>
-    <!--/ Matting. -->
-
-    <!-- Animation. -->
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-3">Animation</h2>
-
-        <!-- Interpolating. -->
-        <h3 class="title is-4">Interpolating states</h3>
-        <div class="content has-text-justified">
-          <p>
-            We can also animate the scene by interpolating the deformation latent codes of two input
-            frames. Use the slider here to linearly interpolate between the left frame and the right
-            frame.
-          </p>
-        </div>
-        <div class="columns is-vcentered interpolation-panel">
-          <div class="column is-3 has-text-centered">
-            <img src="./static/images/interpolate_start.jpg"
-                 class="interpolation-image"
-                 alt="Interpolate start reference image."/>
-            <p>Start Frame</p>
-          </div>
-          <div class="column interpolation-video-column">
-            <div id="interpolation-image-wrapper">
-              Loading...
-            </div>
-            <input class="slider is-fullwidth is-large is-info"
-                   id="interpolation-slider"
-                   step="1" min="0" max="100" value="0" type="range">
-          </div>
-          <div class="column is-3 has-text-centered">
-            <img src="./static/images/interpolate_end.jpg"
-                 class="interpolation-image"
-                 alt="Interpolation end reference image."/>
-            <p class="is-bold">End Frame</p>
-          </div>
-        </div>
-        <br/>
-        <!--/ Interpolating. -->
-
-        <!-- Re-rendering. -->
-        <h3 class="title is-4">Re-rendering the input video</h3>
-        <div class="content has-text-justified">
-          <p>
-            Using <span class="dnerf">Nerfies</span>, you can re-render a video from a novel
-            viewpoint such as a stabilized camera by playing back the training deformations.
-          </p>
-        </div>
-        <div class="content has-text-centered">
-          <video id="replay-video"
-                 controls
-                 muted
-                 preload
-                 playsinline
-                 width="75%">
-            <source src="./static/videos/replay.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <!--/ Re-rendering. -->
-
-      </div>
-    </div>
-    <!--/ Animation. -->
-
-
-    <!-- Concurrent Work. -->
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-3">Related Links</h2>
-
-        <div class="content has-text-justified">
-          <p>
-            There's a lot of excellent work that was introduced around the same time as ours.
-          </p>
-          <p>
-            <a href="https://arxiv.org/abs/2104.09125">Progressive Encoding for Neural Optimization</a> introduces an idea similar to our windowed position encoding for coarse-to-fine optimization.
-          </p>
-          <p>
-            <a href="https://www.albertpumarola.com/research/D-NeRF/index.html">D-NeRF</a> and <a href="https://gvv.mpi-inf.mpg.de/projects/nonrigid_nerf/">NR-NeRF</a>
-            both use deformation fields to model non-rigid scenes.
-          </p>
-          <p>
-            Some works model videos with a NeRF by directly modulating the density, such as <a href="https://video-nerf.github.io/">Video-NeRF</a>, <a href="https://www.cs.cornell.edu/~zl548/NSFF/">NSFF</a>, and <a href="https://neural-3d-video.github.io/">DyNeRF</a>
-          </p>
-          <p>
-            There are probably many more by the time you are reading this. Check out <a href="https://dellaert.github.io/NeRF/">Frank Dellart's survey on recent NeRF papers</a>, and <a href="https://github.com/yenchenlin/awesome-NeRF">Yen-Chen Lin's curated list of NeRF papers</a>.
-          </p>
-        </div>
-      </div>
-    </div>
-    <!--/ Concurrent Work. -->
-
   </div>
 </section>
 
 
-<section class="section" id="BibTeX">
-  <div class="container is-max-desktop content">
-    <h2 class="title">BibTeX</h2>
-    <pre><code>@article{park2021nerfies,
-  author    = {Park, Keunhong and Sinha, Utkarsh and Barron, Jonathan T. and Bouaziz, Sofien and Goldman, Dan B and Seitz, Steven M. and Martin-Brualla, Ricardo},
-  title     = {Nerfies: Deformable Neural Radiance Fields},
-  journal   = {ICCV},
-  year      = {2021},
-}</code></pre>
-  </div>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3">Timbre Transfer</h2>
+    <p>
+      Given the following inputs:
+      <ul>
+        <li><strong>Audio Prompt</strong>: An audio sample representing the target <em>speaker identity</em>.</li>
+        <li><strong>Source Speech</strong>: The original input speech containing the content to be retained.</li>
+        <li><strong>Generated Speech</strong>: The output speech that should reflect the target speaker timbre.</li>
+      </ul>
+    </p>
+    <div style="overflow-x: auto;">
+      <table style="min-width: 1800px; width: 100%; border-collapse: collapse;" border="1">
+        <colgroup>
+          <col style="width: 12.5%;">
+          <col style="width: 12.5%;">
+          <col style="width: 12.5%;">
+          <col style="width: 12.5%;">
+          <col style="width: 12.5%;">
+          <col style="width: 12.5%;">
+          <col style="width: 12.5%;">
+          <col style="width: 12.5%;">
+        </colgroup>
+        <thead>
+          <tr>
+            <th class="title is-4">Source Speech</th>
+            <th class="title is-4">Audio Prompt</th>
+            <th class="title is-4">DiffHier</th>
+            <th class="title is-4">FreeVC</th>
+            <th class="title is-4">DDDMVC</th>
+            <th class="title is-4">Vevo</th>
+            <th class="title is-4">StyleVC</th>
+            <th class="title is-4">UniVST</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><audio controls style="width: 100%;" src="./static/audio/static_vc/origin/p254_021.wav" ></audio></td>
+            <td><audio controls style="width: 100%;" src="./static/audio/static_vc/origin/p287_123.wav" ></audio></td>
+            <td><audio controls style="width: 100%;" src="./static/audio/static_vc/diffhier/diffhier_p254_021_to_p287_123.wav" ></audio></td>
+            <td><audio controls style="width: 100%;" src="./static/audio/static_vc/freevc/freevc_p254_021_to_p287_123.wav" ></audio></td>
+            <td><audio controls style="width: 100%;" src="./static/audio/static_vc/dddmvc/dddmvc_p254_021_to_p287_123.wav" ></audio></td>
+            <td><audio controls style="width: 100%;" src="./static/audio/static_vc/vevo/vevo_p254_021_to_p287_123.wav" ></audio></td>
+            <td><audio controls style="width: 100%;" src="./static/audio/static_vc/stylevc/stylevc_p254_021_to_p287_123.wav" ></audio></td>
+            <td><audio controls style="width: 100%;" src="./static/audio/static_vc/pidm/dipm_p254_021_to_p287_123.wav" ></audio></td>
+          </tr>
+          <tr>
+            <td><audio controls style="width: 100%;" src="./static/audio/static_vc/origin/p276_330.wav" ></audio></td>
+            <td><audio controls style="width: 100%;" src="./static/audio/static_vc/origin/p362_385.wav" ></audio></td>
+            <td><audio controls style="width: 100%;" src="./static/audio/static_vc/diffhier/diffhier_p276_330_to_p362_385.wav" ></audio></td>
+            <td><audio controls style="width: 100%;" src="./static/audio/static_vc/freevc/freevc_p276_330_to_p362_385.wav" ></audio></td>
+            <td><audio controls style="width: 100%;" src="./static/audio/static_vc/dddmvc/dddmvc_p276_330_to_p362_385.wav" ></audio></td>
+            <td><audio controls style="width: 100%;" src="./static/audio/static_vc/vevo/vevo_p276_330_to_p362_385.wav" ></audio></td>
+            <td><audio controls style="width: 100%;" src="./static/audio/static_vc/stylevc/stylevc_p276_330_to_p362_385.wav" ></audio></td>
+            <td><audio controls style="width: 100%;" src="./static/audio/static_vc/pidm/dipm_p276_330_to_p362_385.wav" ></audio></td>
+          </tr>
+          <tr>
+            <td><audio controls style="width: 100%;" src="./static/audio/static_vc/origin/p374_384.wav" ></audio></td>
+            <td><audio controls style="width: 100%;" src="./static/audio/static_vc/origin/p244_328.wav" ></audio></td>
+            <td><audio controls style="width: 100%;" src="./static/audio/static_vc/diffhier/diffhier_p374_384_to_p244_328.wav" ></audio></td>
+            <td><audio controls style="width: 100%;" src="./static/audio/static_vc/freevc/freevc_p374_384_to_p244_328.wav" ></audio></td>
+            <td><audio controls style="width: 100%;" src="./static/audio/static_vc/dddmvc/dddmvc_p374_384_to_p244_328.wav" ></audio></td>
+            <td><audio controls style="width: 100%;" src="./static/audio/static_vc/vevo/vevo_p374_384_to_p244_328.wav" ></audio></td>
+            <td><audio controls style="width: 100%;" src="./static/audio/static_vc/stylevc/stylevc_p374_384_to_p244_328.wav" ></audio></td>
+            <td><audio controls style="width: 100%;" src="./static/audio/static_vc/pidm/dipm_p374_384_to_p244_328.wav" ></audio></td>
+          </tr>
+          <tr>
+            <td><audio controls style="width: 100%;" src="./static/audio/static_vc/origin/p282_077.wav" ></audio></td>
+            <td><audio controls style="width: 100%;" src="./static/audio/static_vc/origin/p303_011.wav" ></audio></td>
+            <td><audio controls style="width: 100%;" src="./static/audio/static_vc/diffhier/diffhier_p282_077_to_p303_011.wav" ></audio></td>
+            <td><audio controls style="width: 100%;" src="./static/audio/static_vc/freevc/freevc_p282_077_to_p303_011.wav" ></audio></td>
+            <td><audio controls style="width: 100%;" src="./static/audio/static_vc/dddmvc/dddmvc_p282_077_to_p303_011.wav" ></audio></td>
+            <td><audio controls style="width: 100%;" src="./static/audio/static_vc/vevo/vevo_p282_077_to_p303_011.wav" ></audio></td>
+            <td><audio controls style="width: 100%;" src="./static/audio/static_vc/stylevc/stylevc_p282_077_to_p303_011.wav" ></audio></td>
+            <td><audio controls style="width: 100%;" src="./static/audio/static_vc/pidm/dipm_p282_077_to_p303_011.wav" ></audio></td>
+          </tr>
+          <tr>
+            <td><audio controls style="width: 100%;" src="./static/audio/static_vc/origin/p230_044.wav" ></audio></td>
+            <td><audio controls style="width: 100%;" src="./static/audio/static_vc/origin/p260_227.wav" ></audio></td>
+            <td><audio controls style="width: 100%;" src="./static/audio/static_vc/diffhier/diffhier_p230_044_to_p260_227.wav" ></audio></td>
+            <td><audio controls style="width: 100%;" src="./static/audio/static_vc/freevc/freevc_p230_044_to_p260_227.wav" ></audio></td>
+            <td><audio controls style="width: 100%;" src="./static/audio/static_vc/dddmvc/dddmvc_p230_044_to_p260_227.wav" ></audio></td>
+            <td><audio controls style="width: 100%;" src="./static/audio/static_vc/vevo/vevo_p230_044_to_p260_227.wav" ></audio></td>
+            <td><audio controls style="width: 100%;" src="./static/audio/static_vc/stylevc/stylevc_p230_044_to_p260_227.wav" ></audio></td>
+            <td><audio controls style="width: 100%;" src="./static/audio/static_vc/pidm/dipm_p230_044_to_p260_227.wav" ></audio></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
 </section>
+
 
 
 <footer class="footer">
@@ -484,7 +474,7 @@
       </div>
     </div>
   </div>
-</footer>
+</footer> 
 
 </body>
 </html>
