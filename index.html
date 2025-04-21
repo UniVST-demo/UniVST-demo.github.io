@@ -119,147 +119,75 @@
   </div>
 </section>
 
-
-
-
 <section class="section">
   <div class="container is-max-desktop">
     <h2 class="title is-3">Multi-Style Transfer</h2>
-    <p>
-      Given the following inputs:
+    <div class="content">
+      <p><strong>Inputs:</strong></p>
       <ul>
-        <li><strong>Text Prompt</strong>: A sentence or phrase that describes the intended speaking <em>style</em>.</li>
+        <li><strong>Text Prompt</strong>: A sentence describing the intended speaking <em>style</em>.</li>
         <li><strong>Audio Prompt</strong>: An audio sample representing the target <em>speaker identity</em>.</li>
-        <li><strong>Source Speech</strong>: The original input speech containing the content to be retained.</li>
-        <li><strong>Generated Speech</strong>: The output speech that should reflect the target speaker and desired style.</li>
+        <li><strong>Source Speech</strong>: The original input speech with the desired <em>content</em>.</li>
       </ul>
-    </p>
-    <h2></h2>
-    <div style="overflow-x: auto;">
-    <table style="min-width: 1000px; width: 100%; border-collapse: collapse;" border="1">
-      <colgroup>
-        <col style="width: 20%;">
-        <col style="width: 20%;">
-        <col style="width: 20%;"> <!-- 让 Text Prompt 变宽 -->
-        <col style="width: 20%;">
-        <col style="width: 20%;">
-      </colgroup>
-      <thead>
-        <tr>
-          <th class="title is-4">Source Speech</th>
-          <th class="title is-4">Audio Prompt</th>
-          <th class="title is-4">Text Prompt</th>
-          <th class="title is-4">UniVST</th>
-          <th class="title is-4">Vevo</th>
-        </tr>
-      </thead>
-      <tbody>
-        
+    </div>
 
-        <!-- Row 2 -->
-        <tr>
-          <td>
-            <h4 class="title is-4"></h4>
-            <audio controls style="width: 100%;" src="./static/audio/origin/0013_000694.wav" ></audio>
-          </td>
-          <td>
-            <h4 class="title is-4"></h4>
-            <audio controls style="width: 100%;" src="./static/audio/origin/0014_000694.wav" ></audio>
-          </td>
-          <td style="text-align: justify; font-size: 0.9em; font-size: 0.9em;">With a regular pitch, the man takes his livid time to express himself, infusing his words with a hint of normal energy.
-          </td>
-          <td>
-            <h4 class="title is-4"></h4>
-            <audio controls style="width: 100%;" src="./static/audio/PIDM_sty/PIDM_angry_0013_000694_to_angry_0014_000694.wav" ></audio>
-          </td>
-          <td>
-            <h4 class="title is-4"></h4>
-            <audio controls style="width: 100%;" src="./static/audio/vevo_voice/vevovoice_angry_0013_000694_to_angry_0014_000694.wav" ></audio>
-          </td>
-        </tr>
-
-        <tr>
-          <td>
-            <h4 class="title is-4"></h4>
-            <audio controls style="width: 100%;" src="./static/audio/origin/0015_000692.wav" ></audio>
-          </td>
-          <td>
-            <h4 class="title is-4"></h4>
-            <audio controls style="width: 100%;" src="./static/audio/origin/0020_001742.wav" ></audio>
-          </td>
-          <td style="text-align: justify; font-size: 0.9em;">A stunned male speaker conveys thoughts with a standard pitch, addressing topics at an ordinary speed, and exuding low energy.</td>
-          <td>
-            <h4 class="title is-4"> </h4>
-            <audio controls style="width: 100%;" src="./static/audio/PIDM_sty/PIDM_angry_0015_000692_to_surprised_0020_001742.wav" ></audio>
-          </td>
-          <td>
-            <h4 class="title is-4"> </h4>
-            <audio controls style="width: 100%;" src="./static/audio/vevo_voice/vevovoice_angry_0015_000692_to_surprised_0020_001742.wav" ></audio>
-          </td>
-        </tr>
-        
-        <tr>
-          <td>
-            <h4 class="title is-4"></h4>
-            <audio controls style="width: 100%;" src="./static/audio/origin/0019_001745.wav" ></audio>
-          </td>
-          <td>
-            <h4 class="title is-4"></h4>
-            <audio controls style="width: 100%;" src="./static/audio/origin/0013_001395.wav" ></audio>
-          </td>
-          <td style="text-align: justify; font-size: 0.9em;">A fatigued disconsolate male voice, characterized by a slow speaking speed and a deep, low pitch, emits a subtle energy, resulting in a soothing audio experience that exudes tranquility.</td>
-          <td>
-            <h4 class="title is-4"> </h4>
-            <audio controls style="width: 100%;" src="./static/audio/PIDM_sty/PIDM_surprised_0019_001745_to_sad_0013_001395.wav" ></audio>
-          </td>
-          <td>
-            <h4 class="title is-4"> </h4>
-            <audio controls style="width: 100%;" src="./static/audio/vevo_voice/vevovoice_surprised_0019_001745_to_sad_0013_001395.wav" ></audio>
-          </td>
-        </tr>
-        
-        <tr>
-          <td>
-            <h4 class="title is-4"></h4>
-            <audio controls style="width: 100%;" src="./static/audio/origin/0011_000348.wav" ></audio>
-          </td>
-          <td>
-            <h4 class="title is-4"></h4>
-            <audio controls style="width: 100%;" src="./static/audio/origin/0016_001398.wav" ></audio>
-          </td>
-          <td style="text-align: justify; font-size: 0.9em;">Speaking with intention, her unhappy voice held a high pitch and low energy.</td>
-          <td>
-            <h4 class="title is-4"> </h4>
-            <audio controls style="width: 100%;" src="./static/audio/PIDM_sty/PIDM_neutral_0011_000348_to_sad_0016_001398.wav"></audio>
-          </td>
-          <td>
-            <h4 class="title is-4"> </h4>
-            <audio controls style="width: 100%;" src="./static/audio/vevo_voice/vevovoice_neutral_0011_000348_to_sad_0016_001398.wav""></audio>
-          </td>
-        </tr>
-        
-        <tr>
-          <td>
-            <h4 class="title is-4"></h4>
-            <audio controls style="width: 100%;" src="./static/audio/origin/0017_001746.wav" ></audio>
-          </td>
-          <td>
-            <h4 class="title is-4"></h4>
-            <audio controls style="width: 100%;" src="./static/audio/origin/0018_001046.wav" ></audio>
-          </td>
-          <td style="text-align: justify; font-size: 0.9em;">With a rapid speaking speed, she expressed her joyful viewpoint.</td>
-          <td>
-            <h4 class="title is-4"> </h4>
-            <audio controls style="width: 100%;" src="./static/audio/PIDM_sty/PIDM_surprised_0017_001746_to_happy_0018_001046.wav" ></audio>
-          </td>
-          <td>
-            <h4 class="title is-4"> </h4>
-            <audio controls style="width: 100%;" src="./static/audio/vevo_voice/vevovoice_surprised_0017_001746_to_happy_0018_001046.wav" ></audio>
-          </td>
-        </tr>
-        
-      </tbody>
-    </table>
+    <div class="box" style="overflow-x: auto; margin-top: 1.5em;">
+      <table class="table is-bordered is-striped is-hoverable is-fullwidth" style="min-width: 900px;">
+        <colgroup>
+          <col style="width: 17.5%;">
+          <col style="width: 17.5%;">
+          <col style="width: 30%;">
+          <col style="width: 17.5%;">
+          <col style="width: 17.5%;">
+        </colgroup>
+        <thead>
+          <tr class="has-background-light">
+            <th class="has-text-centered">Source Speech</th>
+            <th class="has-text-centered">Audio Prompt</th>
+            <th class="has-text-centered">Text Prompt</th>
+            <th class="has-text-centered">UniVST</th>
+            <th class="has-text-centered">Vevo</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><audio controls style="width: 100%;" src="./static/audio/origin/0013_000694.wav"></audio></td>
+            <td><audio controls style="width: 100%;" src="./static/audio/origin/0014_000694.wav"></audio></td>
+            <td style="text-align: justify; font-size: 0.9em;">With a regular pitch, the man takes his livid time to express himself, infusing his words with a hint of normal energy.</td>
+            <td><audio controls style="width: 100%;" src="./static/audio/PIDM_sty/PIDM_angry_0013_000694_to_angry_0014_000694.wav"></audio></td>
+            <td><audio controls style="width: 100%;" src="./static/audio/vevo_voice/vevovoice_angry_0013_000694_to_angry_0014_000694.wav"></audio></td>
+          </tr>
+          <tr>
+            <td><audio controls style="width: 100%;" src="./static/audio/origin/0015_000692.wav"></audio></td>
+            <td><audio controls style="width: 100%;" src="./static/audio/origin/0020_001742.wav"></audio></td>
+            <td style="text-align: justify; font-size: 0.9em;">A stunned male speaker conveys thoughts with a standard pitch, addressing topics at an ordinary speed, and exuding low energy.</td>
+            <td><audio controls style="width: 100%;" src="./static/audio/PIDM_sty/PIDM_angry_0015_000692_to_surprised_0020_001742.wav"></audio></td>
+            <td><audio controls style="width: 100%;" src="./static/audio/vevo_voice/vevovoice_angry_0015_000692_to_surprised_0020_001742.wav"></audio></td>
+          </tr>
+          <tr>
+            <td><audio controls style="width: 100%;" src="./static/audio/origin/0019_001745.wav"></audio></td>
+            <td><audio controls style="width: 100%;" src="./static/audio/origin/0013_001395.wav"></audio></td>
+            <td style="text-align: justify; font-size: 0.9em;">A fatigued disconsolate male voice, characterized by a slow speaking speed and a deep, low pitch, emits a subtle energy, resulting in a soothing audio experience that exudes tranquility.</td>
+            <td><audio controls style="width: 100%;" src="./static/audio/PIDM_sty/PIDM_surprised_0019_001745_to_sad_0013_001395.wav"></audio></td>
+            <td><audio controls style="width: 100%;" src="./static/audio/vevo_voice/vevovoice_surprised_0019_001745_to_sad_0013_001395.wav"></audio></td>
+          </tr>
+          <tr>
+            <td><audio controls style="width: 100%;" src="./static/audio/origin/0011_000348.wav"></audio></td>
+            <td><audio controls style="width: 100%;" src="./static/audio/origin/0016_001398.wav"></audio></td>
+            <td style="text-align: justify; font-size: 0.9em;">Speaking with intention, her unhappy voice held a high pitch and low energy.</td>
+            <td><audio controls style="width: 100%;" src="./static/audio/PIDM_sty/PIDM_neutral_0011_000348_to_sad_0016_001398.wav"></audio></td>
+            <td><audio controls style="width: 100%;" src="./static/audio/vevo_voice/vevovoice_neutral_0011_000348_to_sad_0016_001398.wav"></audio></td>
+          </tr>
+          <tr>
+            <td><audio controls style="width: 100%;" src="./static/audio/origin/0017_001746.wav"></audio></td>
+            <td><audio controls style="width: 100%;" src="./static/audio/origin/0018_001046.wav"></audio></td>
+            <td style="text-align: justify; font-size: 0.9em;">With a rapid speaking speed, she expressed her joyful viewpoint.</td>
+            <td><audio controls style="width: 100%;" src="./static/audio/PIDM_sty/PIDM_surprised_0017_001746_to_happy_0018_001046.wav"></audio></td>
+            <td><audio controls style="width: 100%;" src="./static/audio/vevo_voice/vevovoice_surprised_0017_001746_to_happy_0018_001046.wav"></audio></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
   </div>
 </section>
 
@@ -267,34 +195,34 @@
 <section class="section">
   <div class="container is-max-desktop">
     <h2 class="title is-3">Emotion Transfer</h2>
-    <p>
-      Given the following inputs:
+    <div class="content">
+      <p><strong>Inputs:</strong></p>
       <ul>
         <li><strong>Text Prompt</strong>: A sentence or phrase that describes the intended speaking <em>style</em>.</li>
         <li><strong>Source Speech</strong>: The original input speech containing the content to be retained.</li>
-        <li><strong>Generated Speech</strong>: The output speech that should reflect the target speaker and desired style.</li>
       </ul>
-    </p>
-    <div style="overflow-x: auto;">
-      <table style="min-width: 1700px; width: 100%; border-collapse: collapse;" border="1">
+    </div>
+
+    <div class="box" style="overflow-x: auto; margin-top: 1.5em;">
+      <table class="table is-bordered is-striped is-hoverable is-fullwidth" style="min-width: 900px;">
         <colgroup>
-          <col style="width: 13%;">
-          <col style="width: 13%;">
-          <col style="width: 20%;">
-          <col style="width: 13%;">
-          <col style="width: 13%;">
-          <col style="width: 13%;">
-          <col style="width: 13%;">
+          <col style="width: 11.6%;">
+          <col style="width: 11.6%;">
+          <col style="width: 30%;">
+          <col style="width: 11.6%;">
+          <col style="width: 11.6%;">
+          <col style="width: 11.6%;">
+          <col style="width: 11.6%;">
         </colgroup>
         <thead>
-          <tr>
-            <th class="title is-4">Source Speech</th>
-            <th class="title is-4">Audio Prompt</th>
-            <th class="title is-4">Text Prompt</th>
-            <th class="title is-4">UniVST</th>
-            <th class="title is-4">AINN</th>
-            <th class="title is-4">Vevo</th>
-            <th class="title is-4">StyleVC</th>
+          <tr class="has-background-light">
+            <th class="has-text-centered">Source Speech</th>
+            <th class="has-text-centered">Audio Prompt</th>
+            <th class="has-text-centered">Text Prompt</th>
+            <th class="has-text-centered">UniVST</th>
+            <th class="has-text-centered">AINN</th>
+            <th class="has-text-centered">Vevo</th>
+            <th class="has-text-centered">StyleVC</th>
           </tr>
         </thead>
         <tbody>
@@ -349,21 +277,19 @@
   </div>
 </section>
 
-
-
 <section class="section">
   <div class="container is-max-desktop">
     <h2 class="title is-3">Timbre Transfer</h2>
-    <p>
-      Given the following inputs:
+    <div class="content">
+      <p><strong>Inputs:</strong></p>
       <ul>
         <li><strong>Audio Prompt</strong>: An audio sample representing the target <em>speaker identity</em>.</li>
         <li><strong>Source Speech</strong>: The original input speech containing the content to be retained.</li>
-        <li><strong>Generated Speech</strong>: The output speech that should reflect the target speaker timbre.</li>
       </ul>
-    </p>
-    <div style="overflow-x: auto;">
-      <table style="min-width: 1800px; width: 100%; border-collapse: collapse;" border="1">
+    </div>
+
+    <div class="box" style="overflow-x: auto; margin-top: 1.5em;">
+      <table class="table is-bordered is-striped is-hoverable is-fullwidth" style="min-width: 900px;">
         <colgroup>
           <col style="width: 12.5%;">
           <col style="width: 12.5%;">
@@ -375,100 +301,85 @@
           <col style="width: 12.5%;">
         </colgroup>
         <thead>
-          <tr>
-            <th class="title is-4">Source Speech</th>
-            <th class="title is-4">Audio Prompt</th>
-            <th class="title is-4">DiffHier</th>
-            <th class="title is-4">FreeVC</th>
-            <th class="title is-4">DDDMVC</th>
-            <th class="title is-4">Vevo</th>
-            <th class="title is-4">StyleVC</th>
-            <th class="title is-4">UniVST</th>
+          <tr class="has-background-light">
+            <th class="has-text-centered">Source Speech</th>
+            <th class="has-text-centered">Audio Prompt</th>
+            <th class="has-text-centered">DiffHier</th>
+            <th class="has-text-centered">FreeVC</th>
+            <th class="has-text-centered">DDDMVC</th>
+            <th class="has-text-centered">Vevo</th>
+            <th class="has-text-centered">StyleVC</th>
+            <th class="has-text-centered">UniVST</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td><audio controls style="width: 100%;" src="./static/audio/static_vc/origin/p254_021.wav" ></audio></td>
-            <td><audio controls style="width: 100%;" src="./static/audio/static_vc/origin/p287_123.wav" ></audio></td>
-            <td><audio controls style="width: 100%;" src="./static/audio/static_vc/diffhier/diffhier_p254_021_to_p287_123.wav" ></audio></td>
-            <td><audio controls style="width: 100%;" src="./static/audio/static_vc/freevc/freevc_p254_021_to_p287_123.wav" ></audio></td>
-            <td><audio controls style="width: 100%;" src="./static/audio/static_vc/dddmvc/dddmvc_p254_021_to_p287_123.wav" ></audio></td>
-            <td><audio controls style="width: 100%;" src="./static/audio/static_vc/vevo/vevo_p254_021_to_p287_123.wav" ></audio></td>
-            <td><audio controls style="width: 100%;" src="./static/audio/static_vc/stylevc/stylevc_p254_021_to_p287_123.wav" ></audio></td>
-            <td><audio controls style="width: 100%;" src="./static/audio/static_vc/pidm/dipm_p254_021_to_p287_123.wav" ></audio></td>
+            <td><audio controls style="width: 100%;" src="./static/audio/static_vc/origin/p254_021.wav"></audio></td>
+            <td><audio controls style="width: 100%;" src="./static/audio/static_vc/origin/p287_123.wav"></audio></td>
+            <td><audio controls style="width: 100%;" src="./static/audio/static_vc/diffhier/diffhier_p254_021_to_p287_123.wav"></audio></td>
+            <td><audio controls style="width: 100%;" src="./static/audio/static_vc/freevc/freevc_p254_021_to_p287_123.wav"></audio></td>
+            <td><audio controls style="width: 100%;" src="./static/audio/static_vc/dddmvc/dddmvc_p254_021_to_p287_123.wav"></audio></td>
+            <td><audio controls style="width: 100%;" src="./static/audio/static_vc/vevo/vevo_p254_021_to_p287_123.wav"></audio></td>
+            <td><audio controls style="width: 100%;" src="./static/audio/static_vc/stylevc/stylevc_p254_021_to_p287_123.wav"></audio></td>
+            <td><audio controls style="width: 100%;" src="./static/audio/static_vc/pidm/pidm_p254_021_to_p287_123.wav"></audio></td>
           </tr>
           <tr>
-            <td><audio controls style="width: 100%;" src="./static/audio/static_vc/origin/p276_330.wav" ></audio></td>
-            <td><audio controls style="width: 100%;" src="./static/audio/static_vc/origin/p362_385.wav" ></audio></td>
-            <td><audio controls style="width: 100%;" src="./static/audio/static_vc/diffhier/diffhier_p276_330_to_p362_385.wav" ></audio></td>
-            <td><audio controls style="width: 100%;" src="./static/audio/static_vc/freevc/freevc_p276_330_to_p362_385.wav" ></audio></td>
-            <td><audio controls style="width: 100%;" src="./static/audio/static_vc/dddmvc/dddmvc_p276_330_to_p362_385.wav" ></audio></td>
-            <td><audio controls style="width: 100%;" src="./static/audio/static_vc/vevo/vevo_p276_330_to_p362_385.wav" ></audio></td>
-            <td><audio controls style="width: 100%;" src="./static/audio/static_vc/stylevc/stylevc_p276_330_to_p362_385.wav" ></audio></td>
-            <td><audio controls style="width: 100%;" src="./static/audio/static_vc/pidm/dipm_p276_330_to_p362_385.wav" ></audio></td>
+            <td><audio controls style="width: 100%;" src="./static/audio/static_vc/origin/p276_330.wav"></audio></td>
+            <td><audio controls style="width: 100%;" src="./static/audio/static_vc/origin/p362_385.wav"></audio></td>
+            <td><audio controls style="width: 100%;" src="./static/audio/static_vc/diffhier/diffhier_p276_330_to_p362_385.wav"></audio></td>
+            <td><audio controls style="width: 100%;" src="./static/audio/static_vc/freevc/freevc_p276_330_to_p362_385.wav"></audio></td>
+            <td><audio controls style="width: 100%;" src="./static/audio/static_vc/dddmvc/dddmvc_p276_330_to_p362_385.wav"></audio></td>
+            <td><audio controls style="width: 100%;" src="./static/audio/static_vc/vevo/vevo_p276_330_to_p362_385.wav"></audio></td>
+            <td><audio controls style="width: 100%;" src="./static/audio/static_vc/stylevc/stylevc_p276_330_to_p362_385.wav"></audio></td>
+            <td><audio controls style="width: 100%;" src="./static/audio/static_vc/pidm/pidm_p276_330_to_p362_385.wav"></audio></td>
           </tr>
           <tr>
-            <td><audio controls style="width: 100%;" src="./static/audio/static_vc/origin/p374_384.wav" ></audio></td>
-            <td><audio controls style="width: 100%;" src="./static/audio/static_vc/origin/p244_328.wav" ></audio></td>
-            <td><audio controls style="width: 100%;" src="./static/audio/static_vc/diffhier/diffhier_p374_384_to_p244_328.wav" ></audio></td>
-            <td><audio controls style="width: 100%;" src="./static/audio/static_vc/freevc/freevc_p374_384_to_p244_328.wav" ></audio></td>
-            <td><audio controls style="width: 100%;" src="./static/audio/static_vc/dddmvc/dddmvc_p374_384_to_p244_328.wav" ></audio></td>
-            <td><audio controls style="width: 100%;" src="./static/audio/static_vc/vevo/vevo_p374_384_to_p244_328.wav" ></audio></td>
-            <td><audio controls style="width: 100%;" src="./static/audio/static_vc/stylevc/stylevc_p374_384_to_p244_328.wav" ></audio></td>
-            <td><audio controls style="width: 100%;" src="./static/audio/static_vc/pidm/dipm_p374_384_to_p244_328.wav" ></audio></td>
+            <td><audio controls style="width: 100%;" src="./static/audio/static_vc/origin/p374_384.wav"></audio></td>
+            <td><audio controls style="width: 100%;" src="./static/audio/static_vc/origin/p244_328.wav"></audio></td>
+            <td><audio controls style="width: 100%;" src="./static/audio/static_vc/diffhier/diffhier_p374_384_to_p244_328.wav"></audio></td>
+            <td><audio controls style="width: 100%;" src="./static/audio/static_vc/freevc/freevc_p374_384_to_p244_328.wav"></audio></td>
+            <td><audio controls style="width: 100%;" src="./static/audio/static_vc/dddmvc/dddmvc_p374_384_to_p244_328.wav"></audio></td>
+            <td><audio controls style="width: 100%;" src="./static/audio/static_vc/vevo/vevo_p374_384_to_p244_328.wav"></audio></td>
+            <td><audio controls style="width: 100%;" src="./static/audio/static_vc/stylevc/stylevc_p374_384_to_p244_328.wav"></audio></td>
+            <td><audio controls style="width: 100%;" src="./static/audio/static_vc/pidm/pidm_p374_384_to_p244_328.wav"></audio></td>
           </tr>
           <tr>
-            <td><audio controls style="width: 100%;" src="./static/audio/static_vc/origin/p282_077.wav" ></audio></td>
-            <td><audio controls style="width: 100%;" src="./static/audio/static_vc/origin/p303_011.wav" ></audio></td>
-            <td><audio controls style="width: 100%;" src="./static/audio/static_vc/diffhier/diffhier_p282_077_to_p303_011.wav" ></audio></td>
-            <td><audio controls style="width: 100%;" src="./static/audio/static_vc/freevc/freevc_p282_077_to_p303_011.wav" ></audio></td>
-            <td><audio controls style="width: 100%;" src="./static/audio/static_vc/dddmvc/dddmvc_p282_077_to_p303_011.wav" ></audio></td>
-            <td><audio controls style="width: 100%;" src="./static/audio/static_vc/vevo/vevo_p282_077_to_p303_011.wav" ></audio></td>
-            <td><audio controls style="width: 100%;" src="./static/audio/static_vc/stylevc/stylevc_p282_077_to_p303_011.wav" ></audio></td>
-            <td><audio controls style="width: 100%;" src="./static/audio/static_vc/pidm/dipm_p282_077_to_p303_011.wav" ></audio></td>
+            <td><audio controls style="width: 100%;" src="./static/audio/static_vc/origin/p282_077.wav"></audio></td>
+            <td><audio controls style="width: 100%;" src="./static/audio/static_vc/origin/p303_011.wav"></audio></td>
+            <td><audio controls style="width: 100%;" src="./static/audio/static_vc/diffhier/diffhier_p282_077_to_p303_011.wav"></audio></td>
+            <td><audio controls style="width: 100%;" src="./static/audio/static_vc/freevc/freevc_p282_077_to_p303_011.wav"></audio></td>
+            <td><audio controls style="width: 100%;" src="./static/audio/static_vc/dddmvc/dddmvc_p282_077_to_p303_011.wav"></audio></td>
+            <td><audio controls style="width: 100%;" src="./static/audio/static_vc/vevo/vevo_p282_077_to_p303_011.wav"></audio></td>
+            <td><audio controls style="width: 100%;" src="./static/audio/static_vc/stylevc/stylevc_p282_077_to_p303_011.wav"></audio></td>
+            <td><audio controls style="width: 100%;" src="./static/audio/static_vc/pidm/pidm_p282_077_to_p303_011.wav"></audio></td>
           </tr>
           <tr>
-            <td><audio controls style="width: 100%;" src="./static/audio/static_vc/origin/p230_044.wav" ></audio></td>
-            <td><audio controls style="width: 100%;" src="./static/audio/static_vc/origin/p260_227.wav" ></audio></td>
-            <td><audio controls style="width: 100%;" src="./static/audio/static_vc/diffhier/diffhier_p230_044_to_p260_227.wav" ></audio></td>
-            <td><audio controls style="width: 100%;" src="./static/audio/static_vc/freevc/freevc_p230_044_to_p260_227.wav" ></audio></td>
-            <td><audio controls style="width: 100%;" src="./static/audio/static_vc/dddmvc/dddmvc_p230_044_to_p260_227.wav" ></audio></td>
-            <td><audio controls style="width: 100%;" src="./static/audio/static_vc/vevo/vevo_p230_044_to_p260_227.wav" ></audio></td>
-            <td><audio controls style="width: 100%;" src="./static/audio/static_vc/stylevc/stylevc_p230_044_to_p260_227.wav" ></audio></td>
-            <td><audio controls style="width: 100%;" src="./static/audio/static_vc/pidm/dipm_p230_044_to_p260_227.wav" ></audio></td>
+            <td><audio controls style="width: 100%;" src="./static/audio/static_vc/origin/p230_044.wav"></audio></td>
+            <td><audio controls style="width: 100%;" src="./static/audio/static_vc/origin/p260_227.wav"></audio></td>
+            <td><audio controls style="width: 100%;" src="./static/audio/static_vc/diffhier/diffhier_p230_044_to_p260_227.wav"></audio></td>
+            <td><audio controls style="width: 100%;" src="./static/audio/static_vc/freevc/freevc_p230_044_to_p260_227.wav"></audio></td>
+            <td><audio controls style="width: 100%;" src="./static/audio/static_vc/dddmvc/dddmvc_p230_044_to_p260_227.wav"></audio></td>
+            <td><audio controls style="width: 100%;" src="./static/audio/static_vc/vevo/vevo_p230_044_to_p260_227.wav"></audio></td>
+            <td><audio controls style="width: 100%;" src="./static/audio/static_vc/stylevc/stylevc_p230_044_to_p260_227.wav"></audio></td>
+            <td><audio controls style="width: 100%;" src="./static/audio/static_vc/pidm/pidm_p230_044_to_p260_227.wav"></audio></td>
           </tr>
         </tbody>
       </table>
     </div>
+  </div>
 </section>
+
 
 
 
 <footer class="footer">
   <div class="container">
-    <div class="content has-text-centered">
-      <a class="icon-link"
-         href="./static/videos/nerfies_paper.pdf">
-        <i class="fas fa-file-pdf"></i>
-      </a>
-      <a class="icon-link" href="https://github.com/keunhong" class="external-link" disabled>
-        <i class="fab fa-github"></i>
-      </a>
-    </div>
     <div class="columns is-centered">
       <div class="column is-8">
         <div class="content">
           <p>
-            This website is licensed under a <a rel="license"
-                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
-            Commons Attribution-ShareAlike 4.0 International License</a>.
-          </p>
-          <p>
-            This means you are free to borrow the <a
-              href="https://github.com/nerfies/nerfies.github.io">source code</a> of this website,
-            we just ask that you link back to this page in the footer.
-            Please remember to remove the analytics code included in the header of the website which
-            you do not want on your website.
+            This page borrows from the <a
+              href="https://github.com/nerfies/nerfies.github.io">project</a>.
           </p>
         </div>
       </div>
