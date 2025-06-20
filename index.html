@@ -371,6 +371,56 @@
 </section>
 
 
+<section class="section">
+  <div class="container is-max-desktop">
+  <h2 class="title is-3">Prompt Design</h2>
+  <table class="table is-fullwidth is-bordered is-striped">
+    <thead>
+      <tr>
+        <th>Text Prompt</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>You are a perceptive assistant trained to evaluate the likely speech tempo implied by a text prompt.<br>
+
+          Your task is to:<br>
+          1. Extract key acoustic properties implied by the text (such as speech rate, pause expectation, clarity, emotional tone, energy level, etc.).<br>
+          2. Analyze how these properties would influence the pacing of the corresponding speech.<br>
+          3. Assign a tempo score between 0 and 1 based on your analysis:<br>
+          - 0 represents extremely slow delivery (very slow, calm, deliberate speech).<br>
+          - 1 represents extremely fast delivery (very rapid, energetic, compressed speech).<br>
+          - 0.5 represents a moderate pace (between slow and fast).<br>
+          - Values in between indicate intermediate tempo levels.</td>
+      </tr>
+      <tr>
+        <th>Audio Prompt</th>
+      </tr>
+      <tr>
+        <td>You are a perceptive assistant trained to evaluate the speech tempo of an audio clip.<br>
+          Your goal is to reason step by step like a human listener and assign a tempo score between 0 (extremely slow) and 1 (extremely fast). The higher the score, the faster the perceived speech tempo. <br>
+          Do not rely solely on raw speed metrics—consider how the speech feels holistically, including rhythm, clarity, pausing, and overall delivery style.<br>
+          The score must be a single number from 0 to 1, rounded to one decimal place.<br>
+          **Step 1: Pausing Pattern**  <br>
+          - Are there long silences or frequent pauses between words or phrases?  <br>
+          - Or does the speaker talk continuously with minimal interruption?<br>
+          **Step 2: Articulation Clarity**  <br>
+          - Are the words clearly enunciated and easy to understand?  <br>
+          - Or are they rushed, slurred, or overly compressed?<br>
+          **Step 3: Information Density & Rhythm**  <br>
+          - Does the speaker convey a large amount of information in a short time?  <br>
+          - Does the rhythm feel calm and measured, or fast and pressured?<br>
+</td>
+      </tr>
+      
+      <!-- 你可以继续添加更多行 -->
+    </tbody>
+  </table>
+</div>
+</section>
+
+
+
 
 
 <footer class="footer">
